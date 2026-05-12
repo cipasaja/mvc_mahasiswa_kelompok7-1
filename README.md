@@ -813,8 +813,8 @@ Dompdf
 
 Method digunakan untuk:
 - mengambil data mahasiswa
-- membuat tampilan PDF
-- mengunduh file PDF
+- membuat file PDF
+- mengunduh data mahasiswa
 
 ---
 
@@ -859,12 +859,16 @@ Dokumentasi berisi:
 
 ![Hasil Akhir](docs/sesi8_hasil_akhir.jpeg)
 
+## Hasil Export Excel
+
+![Excel](docs/sesi8_excel.jpeg)
+
 ---
 
 # Commit GitHub
 
 ```bash
 git add .
-git commit -m "Sesi 8 - Hasil Akhir"
+git commit -m "Sesi 8 - export data dan dokumentasi akhir"
 git push origin main
 ```
