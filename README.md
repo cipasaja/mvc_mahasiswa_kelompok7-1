@@ -340,3 +340,111 @@ git add .
 git commit -m "Sesi 2 - routing dan base controller"
 git push origin main
 ```
+
+# SESI 4 - TAMBAH DATA MAHASISWA (CREATE)
+
+## Tujuan
+Membuat fitur tambah data mahasiswa menggunakan konsep MVC.
+
+---
+
+## Langkah Pengerjaan
+
+### 1. Membuat Method create()
+Menambahkan method `create()` pada file:
+
+```bash
+app/controllers/MahasiswaController.php
+```
+
+Method ini digunakan untuk menampilkan form tambah mahasiswa.
+
+---
+
+### 2. Membuat Method store()
+Menambahkan method `store()` untuk:
+- menerima data dari form
+- validasi input
+- menyimpan data ke database
+- menampilkan flash message
+
+---
+
+### 3. Membuat Method create() pada Model
+Menambahkan method:
+
+```php
+create($data)
+```
+
+pada file:
+
+```bash
+app/models/Mahasiswa.php
+```
+
+Method ini digunakan untuk menyimpan data mahasiswa menggunakan PDO.
+
+---
+
+### 4. Membuat Form Tambah Mahasiswa
+Membuat file:
+
+```bash
+app/views/mahasiswa/create.php
+```
+
+Form berisi:
+- npm
+- nama lengkap
+- fakultas
+- jurusan
+- tempat lahir
+- tanggal lahir
+- jenis kelamin
+
+---
+
+### 5. Menambahkan Tombol Tambah Mahasiswa
+Menambahkan tombol:
+
+```text
+Tambah Mahasiswa
+```
+
+pada halaman data mahasiswa.
+
+---
+
+# Hasil Sesi 4
+
+- Form tambah mahasiswa berhasil dibuat
+- Data berhasil disimpan ke database
+- Validasi berhasil berjalan
+- Data baru berhasil tampil pada tabel mahasiswa
+
+---
+
+# Screenshot
+
+## Form Tambah Mahasiswa
+
+![Create](docs/sesi4-tambah data mahasiswa.jpeg)
+
+---
+
+# URL Testing
+
+```bash
+http://localhost/mvc_mahasiswa_kelompok7/public/mahasiswa/create
+```
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Sesi 4 - create mahasiswa"
+git push origin main
+```
