@@ -872,3 +872,144 @@ git add .
 git commit -m "Sesi 8 - export data dan dokumentasi akhir"
 git push origin main
 ```
+
+
+# TUGAS AKHIR - OPSI 1 LOGIN ADMIN & USER
+
+## Tujuan
+Menambahkan sistem autentikasi login dengan role Admin dan User pada aplikasi MVC Mahasiswa.
+
+---
+
+# Fitur Login
+
+## Login Admin
+Admin memiliki hak akses:
+- tambah data mahasiswa
+- edit data mahasiswa
+- hapus data mahasiswa
+- export data
+
+Setelah berhasil login, admin akan diarahkan ke halaman dashboard/data mahasiswa dengan tampilan menu lengkap.
+
+---
+
+## Login User
+User hanya memiliki akses terbatas, yaitu:
+- melihat data mahasiswa
+- mencari data mahasiswa
+- melihat detail data
+
+User tidak dapat menambah, mengedit, maupun menghapus data.
+
+---
+
+## Login dengan Google
+Aplikasi juga menyediakan fitur login menggunakan akun Google untuk mempermudah proses autentikasi pengguna.
+
+Dengan fitur ini, pengguna dapat login tanpa perlu memasukkan username dan password secara manual.
+
+---
+
+## Session dan Hak Akses
+Sistem menggunakan session login untuk:
+- menyimpan status pengguna
+- membedakan role admin dan user
+- membatasi akses halaman tertentu
+
+Jika user belum login, maka sistem akan mengarahkan pengguna ke halaman login terlebih dahulu.
+
+---
+
+# Langkah Pengerjaan
+
+### 1. Membuat AuthController
+Membuat file:
+
+```bash
+app/controllers/AuthController.php
+```
+
+Controller digunakan untuk:
+- login
+- logout
+- validasi user
+- session login
+
+---
+
+### 2. Membuat Tabel User
+Membuat tabel:
+
+```sql
+users
+```
+
+Data tabel:
+- id
+- username
+- password
+- role
+- nama_lengkap
+
+---
+
+### 3. Membuat Middleware Session
+Menambahkan pengecekan session untuk membatasi akses halaman berdasarkan role user.
+
+---
+
+### 4. Membuat Halaman Login
+Membuat file:
+
+```bash
+app/views/auth/login.php
+```
+
+Halaman login menggunakan Bootstrap dengan tampilan responsive.
+
+---
+
+### 5. Membuat Role Admin dan User
+Role:
+- admin
+- user
+
+Hak akses dibedakan berdasarkan session login.
+
+---
+
+# Hasil Tugas Akhir
+
+- Login admin berhasil berjalan
+- Login user berhasil berjalan
+- Session login berhasil berjalan
+- Hak akses admin dan user berhasil dibedakan
+- Login Google berhasil ditampilkan
+- Tampilan aplikasi menjadi lebih aman dan modern
+
+---
+
+# Screenshot
+
+## Halaman Login
+
+![Login](docs/login.jpeg)
+
+## Login Admin Berhasil
+
+![Admin](docs/login_admin.jpeg)
+
+## Login User Berhasil
+
+![User](docs/login_google.jpeg)
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Tugas akhir - opsi 1 login admin dan user"
+git push origin main
+```
