@@ -649,6 +649,120 @@ Data mahasiswa akan berubah sesuai:
 
 # Commit GitHub
 
+
+# SESI 7 - LAYOUT DENGAN BOOTSTRAP & RESPONSIVE
+
+## Tujuan
+Membuat tampilan aplikasi menjadi lebih modern dan responsive menggunakan Bootstrap 5.
+
+---
+
+## Langkah Pengerjaan
+
+### 1. Menggunakan Bootstrap 5
+Mengintegrasikan Bootstrap 5 menggunakan CDN pada project MVC.
+
+---
+
+### 2. Membuat Layout Header
+Membuat file:
+
+```bash
+app/views/layouts/header.php
+```
+
+Header digunakan untuk:
+- membuka struktur HTML
+- menampilkan navbar
+- menghubungkan Bootstrap CSS
+
+Navbar berisi menu:
+- Home
+- Data Mahasiswa
+- Tambah Mahasiswa
+
+---
+
+### 3. Membuat Layout Footer
+Membuat file:
+
+```bash
+app/views/layouts/footer.php
+```
+
+Footer digunakan untuk:
+- menutup struktur HTML
+- menghubungkan Bootstrap JavaScript
+
+---
+
+### 4. Modifikasi Base Controller
+Memodifikasi method:
+
+```php
+view($view, $data = [])
+```
+
+pada file:
+
+```bash
+core/Controller.php
+```
+
+Agar seluruh halaman otomatis menggunakan:
+- header
+- footer
+- layout Bootstrap
+
+---
+
+### 5. Menyesuaikan Tampilan View
+Memperbarui seluruh halaman:
+- home
+- mahasiswa
+- create
+- edit
+
+agar menggunakan class Bootstrap.
+
+---
+
+### 6. Menambahkan Styling Bootstrap
+Menggunakan class:
+- `table table-striped table-bordered`
+- `form-control`
+- `btn btn-primary`
+- `alert alert-success`
+
+untuk mempercantik tampilan aplikasi.
+
+---
+
+# Hasil Sesi 7
+
+- Tampilan aplikasi menjadi lebih modern
+- Layout responsive berhasil diterapkan
+- Navbar berhasil ditampilkan
+- Tabel dan form menjadi lebih rapi
+- Seluruh halaman memiliki tampilan yang konsisten
+
+---
+
+# Screenshot
+
+## Tampilan Bootstrap
+
+![Bootstrap](docs/sesi7_boostrap.jpeg)
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Sesi 7 - bootstrap"
+git push origin main
+```
 ```bash
 git add .
 git commit -m "Sesi 6 - pencarian dan filter data"
