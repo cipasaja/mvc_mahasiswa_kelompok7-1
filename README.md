@@ -1152,3 +1152,137 @@ git add .
 git commit -m "Tugas akhir - opsi 2 - API"
 git push origin main
 ```
+
+# TUGAS AKHIR - OPSI 3 RELASI DATABASE
+
+## Tujuan
+Menambahkan relasi database antara data mahasiswa dan mata kuliah pada aplikasi MVC Mahasiswa.
+
+---
+
+# Penjelasan Relasi Database
+
+Pada tugas akhir ini, aplikasi berhasil dikembangkan dengan menambahkan tabel mata kuliah dan relasi pengambilan mata kuliah oleh mahasiswa.
+
+Relasi database digunakan agar:
+- mahasiswa dapat mengambil beberapa mata kuliah
+- data menjadi lebih terstruktur
+- sistem lebih mendekati implementasi akademik sebenarnya
+
+---
+
+# Tabel Database
+
+## Tabel Mahasiswa
+Berisi data mahasiswa:
+- npm
+- nama lengkap
+- jurusan
+- tanggal lahir
+- jenis kelamin
+
+---
+
+## Tabel Mata Kuliah
+Berisi data mata kuliah:
+- kode mata kuliah
+- nama mata kuliah
+- jumlah SKS
+
+---
+
+## Tabel Ambil Mata Kuliah
+Tabel relasi yang menghubungkan:
+- mahasiswa
+- mata kuliah
+
+Sehingga satu mahasiswa dapat mengambil banyak mata kuliah.
+
+---
+
+# Langkah Pengerjaan
+
+### 1. Membuat Tabel Mata Kuliah
+Membuat tabel:
+
+```sql
+mata_kuliah
+```
+
+untuk menyimpan data mata kuliah.
+
+---
+
+### 2. Membuat Tabel Relasi
+Membuat tabel:
+
+```sql
+ambil_mk
+```
+
+untuk menghubungkan mahasiswa dengan mata kuliah.
+
+---
+
+### 3. Membuat Model Mata Kuliah
+Membuat file:
+
+```bash
+app/models/MataKuliah.php
+```
+
+Model digunakan untuk mengambil dan menyimpan data mata kuliah.
+
+---
+
+### 4. Membuat Controller Mata Kuliah
+Membuat file:
+
+```bash
+app/controllers/MataKuliahController.php
+```
+
+Controller digunakan untuk:
+- menampilkan data mata kuliah
+- menambah mata kuliah
+- menghubungkan mahasiswa dengan mata kuliah
+
+---
+
+### 5. Membuat Tampilan Mata Kuliah
+Membuat halaman:
+- daftar mata kuliah
+- form tambah mata kuliah
+- relasi mahasiswa dan mata kuliah
+
+---
+
+# Hasil Tugas Akhir
+
+- Tabel mata kuliah berhasil dibuat
+- Relasi mahasiswa dan mata kuliah berhasil berjalan
+- Data mata kuliah berhasil ditambahkan
+- Sistem akademik menjadi lebih lengkap
+- Data relasi berhasil tampil pada aplikasi
+
+---
+
+# Screenshot
+
+## Tambah Mata Kuliah
+
+![Tambah MK](docs/opsi3_tambahMataKuliah.jpeg)
+
+## Hasil Relasi Database
+
+![Hasil](docs/opsi3_hasil.jpeg)
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Tugas akhir - opsi 3 relasi database"
+git push origin main
+```
