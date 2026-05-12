@@ -24,6 +24,126 @@ mvc_mahasiswa_kelompok7/
 
 ---
 
+# SESI 3 - MODEL DAN TAMPIL DATA MAHASISWA
+
+## Tujuan
+Membuat model Mahasiswa, menambahkan data dummy, dan menampilkan data mahasiswa ke dalam tabel.
+
+---
+
+## Langkah Pengerjaan
+
+### 1. Membuat Model Mahasiswa
+Membuat file:
+
+```bash
+app/models/Mahasiswa.php
+```
+
+Model digunakan untuk mengambil data mahasiswa dari database menggunakan PDO.
+
+Method yang dibuat:
+
+```php
+getAll()
+```
+
+Method ini menjalankan query:
+
+```sql
+SELECT * FROM mahasiswa ORDER BY id DESC
+```
+
+---
+
+### 2. Menambahkan Data Dummy
+Menambahkan minimal 5 data mahasiswa ke database menggunakan SQL.
+
+Data berisi:
+- NPM
+- Nama Lengkap
+- Fakultas
+- Jurusan
+- Tempat Lahir
+- Tanggal Lahir
+- Jenis Kelamin
+
+---
+
+### 3. Membuat MahasiswaController
+Membuat file:
+
+```bash
+app/controllers/MahasiswaController.php
+```
+
+Method:
+
+```php
+index()
+```
+
+Method ini digunakan untuk:
+- memanggil model Mahasiswa
+- mengambil seluruh data mahasiswa
+- mengirim data ke view
+
+---
+
+### 4. Membuat View Mahasiswa
+Membuat file:
+
+```bash
+app/views/mahasiswa/index.php
+```
+
+Data mahasiswa ditampilkan dalam bentuk tabel HTML.
+
+Kolom tabel:
+- No
+- NPM
+- Nama Lengkap
+- Fakultas
+- Jurusan
+- Tempat Lahir
+- Tanggal Lahir
+- Jenis Kelamin
+- Status
+
+---
+
+## Hasil Sesi 3
+
+- Model Mahasiswa berhasil dibuat
+- Data dummy berhasil ditambahkan
+- Data mahasiswa berhasil ditampilkan
+- Tabel mahasiswa tampil di browser
+
+---
+
+# Screenshot
+
+## Tabel Data Mahasiswa
+
+![Mahasiswa](docs/sesi3-model dan tampil data.jpeg)
+
+---
+
+# URL Testing
+
+```bash
+http://localhost/mvc_mahasiswa_kelompok7/public/mahasiswa
+```
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Sesi 3 - model dan tampil data"
+git push origin main
+```
 # Langkah Pengerjaan
 
 ## 1. Membuat Struktur Folder
