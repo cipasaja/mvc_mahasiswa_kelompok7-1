@@ -561,3 +561,96 @@ git add .
 git commit -m "Sesi 5 - update dan delete mahasiswa"
 git push origin main
 ```
+
+# SESI 6 - PENCARIAN DAN FILTER DATA
+
+## Tujuan
+Menambahkan fitur pencarian dan filter data mahasiswa berdasarkan nama, NPM, dan jurusan.
+
+---
+
+## Langkah Pengerjaan
+
+### 1. Modifikasi Method index()
+Memodifikasi method:
+
+```php
+index()
+```
+
+pada file:
+
+```bash
+app/controllers/MahasiswaController.php
+```
+
+Method digunakan untuk menerima parameter:
+- search
+- jurusan
+
+menggunakan metode GET.
+
+---
+
+### 2. Membuat Method searchAndFilter()
+Menambahkan method:
+
+```php
+searchAndFilter($search, $jurusan)
+```
+
+pada file:
+
+```bash
+app/models/Mahasiswa.php
+```
+
+Method digunakan untuk:
+- mencari data berdasarkan nama atau NPM
+- memfilter data berdasarkan jurusan
+- menjalankan query dinamis menggunakan PDO
+
+---
+
+### 3. Membuat Form Pencarian
+Menambahkan form pencarian pada halaman mahasiswa.
+
+Form berisi:
+- input pencarian
+- dropdown jurusan
+- tombol cari
+- tombol reset
+
+---
+
+### 4. Menampilkan Hasil Filter
+Data mahasiswa akan berubah sesuai:
+- kata kunci pencarian
+- jurusan yang dipilih
+
+---
+
+# Hasil Sesi 6
+
+- Fitur pencarian berhasil berjalan
+- Filter jurusan berhasil berjalan
+- Data tabel berubah sesuai pencarian
+- Tombol reset berhasil mengembalikan data awal
+
+---
+
+# Screenshot
+
+## Pencarian dan Filter Data
+
+![Pencarian](docs/sesi6_pencarian.jpeg)
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Sesi 6 - pencarian dan filter data"
+git push origin main
+```
