@@ -768,3 +768,103 @@ git add .
 git commit -m "Sesi 6 - pencarian dan filter data"
 git push origin main
 ```
+
+# SESI 8 - EXPORT DATA DAN DOKUMENTASI AKHIR
+
+## Tujuan
+Menambahkan fitur export data ke CSV dan PDF serta menyelesaikan dokumentasi project.
+
+---
+
+## Langkah Pengerjaan
+
+### 1. Membuat Export CSV
+Menambahkan method:
+
+```php
+exportCSV()
+```
+
+pada file:
+
+```bash
+app/controllers/MahasiswaController.php
+```
+
+Method digunakan untuk:
+- mengambil data mahasiswa
+- membuat file CSV
+- mengunduh data mahasiswa
+
+---
+
+### 2. Membuat Export PDF
+Menambahkan method:
+
+```php
+exportPDF()
+```
+
+Menggunakan library:
+
+```text
+Dompdf
+```
+
+Method digunakan untuk:
+- mengambil data mahasiswa
+- membuat tampilan PDF
+- mengunduh file PDF
+
+---
+
+### 3. Menambahkan Tombol Export
+Menambahkan tombol:
+- Export CSV
+- Export PDF
+
+pada halaman data mahasiswa.
+
+---
+
+### 4. Menyelesaikan Dokumentasi
+Membuat file:
+
+```bash
+README.md
+```
+
+Dokumentasi berisi:
+- penjelasan project
+- fitur aplikasi
+- langkah menjalankan aplikasi
+- screenshot setiap sesi
+- repository GitHub
+
+---
+
+# Hasil Sesi 8
+
+- Export CSV berhasil berjalan
+- Export PDF berhasil berjalan
+- File berhasil diunduh
+- Dokumentasi project berhasil dibuat
+- Seluruh fitur aplikasi berhasil diselesaikan
+
+---
+
+# Screenshot
+
+## Hasil Akhir Project
+
+![Hasil Akhir](docs/sesi8_hasil_akhir.jpeg)
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Sesi 8 - Hasil Akhir"
+git push origin main
+```
