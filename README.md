@@ -1,3 +1,17 @@
+# Sistem Informasi Manajemen Akademik (SIMAK)
+
+## Kelompok 7
+
+### Anggota dan Pembagian Tugas
+
+- Kayla Alifa Inaya (2310010224) sebagai **Backend Engineer (BE)** dan **Frontend Engineer (FE)**  
+  Bertanggung jawab atas logika server, database, model, controller, routing, tampilan antarmuka, layout, CSS, Bootstrap, serta memastikan sistem berjalan dengan baik di browser.
+
+- Assyifa Nur Aulia (2310010409) sebagai **Documentation & Debugging Officer (DDO)**  
+  Bertanggung jawab dalam dokumentasi proyek, pengelolaan repository GitHub, debugging error, serta memastikan seluruh anggota memahami alur program dan fitur sistem.
+
+
+
 # SESI 1 - PERSIAPAN PROYEK
 
 ## Tujuan
