@@ -125,7 +125,7 @@ Kolom tabel:
 
 ## Tabel Data Mahasiswa
 
-![Mahasiswa](docs/sesi3-model dan tampil data.jpeg)
+![Mahasiswa](docs/sesi3_model dan tampil data.jpeg)
 
 ---
 
@@ -329,7 +329,7 @@ Selamat datang di Aplikasi MVC Mahasiswa. Kelompok kami siap belajar!
 
 ## Halaman Home
 
-![Home](docs/sesi2-home.jpeg)
+![Home](docs/home.jpeg)
 
 ---
 
@@ -429,7 +429,7 @@ pada halaman data mahasiswa.
 
 ## Form Tambah Mahasiswa
 
-![Create](docs/sesi4-tambah data mahasiswa.jpeg)
+![Create](docs/sesi4_tambah data mahasiswa.jpeg)
 
 ---
 
