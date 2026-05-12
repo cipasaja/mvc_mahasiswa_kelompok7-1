@@ -752,7 +752,7 @@ untuk mempercantik tampilan aplikasi.
 
 ## Tampilan Bootstrap
 
-![Bootstrap](docs/sesi7_boostrap.png)
+![Bootstrap](docs/sesi7_boostrap.jpeg)
 
 ---
 
