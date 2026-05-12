@@ -1286,3 +1286,29 @@ git add .
 git commit -m "Tugas akhir - opsi 3 relasi database"
 git push origin main
 ```
+
+## Opsi 4 – Dashboard Statistik Mahasiswa
+
+Pada opsi ini dilakukan pembuatan halaman dashboard untuk menampilkan ringkasan data akademik secara visual dan informatif. Dashboard menampilkan jumlah mahasiswa, jumlah mata kuliah, status mahasiswa aktif dan nonaktif, serta grafik statistik mahasiswa per jurusan.
+
+### Fitur pada Dashboard:
+- Menampilkan total mahasiswa
+- Menampilkan total mata kuliah
+- Menampilkan jumlah mahasiswa aktif dan nonaktif
+- Grafik statistik mahasiswa per jurusan
+- Diagram status mahasiswa
+- Statistik mahasiswa berdasarkan fakultas
+- Grafik jenis kelamin mahasiswa
+- Tampilan dashboard menggunakan Bootstrap dan Chart.js
+
+### Screenshot Hasil Dashboard
+
+#### Tampilan Dashboard Utama
+![Dashboard Utama](docs/dashboard.jpeg)
+
+Halaman dashboard utama berhasil menampilkan ringkasan data akademik secara realtime dalam bentuk card statistik dan grafik visual.
+
+#### Tampilan Statistik Dashboard
+![Dashboard Statistik](docs/dashboard2_asli.jpeg)
+
+Dashboard juga menampilkan diagram statistik mahasiswa berdasarkan fakultas dan jenis kelamin sehingga informasi akademik dapat dipantau dengan lebih mudah dan interaktif.
