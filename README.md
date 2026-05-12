@@ -1013,3 +1013,142 @@ git add .
 git commit -m "Tugas akhir - opsi 1 login admin dan user"
 git push origin main
 ```
+
+
+# TUGAS AKHIR - OPSI 2 REST API MAHASISWA
+
+## Tujuan
+Menambahkan REST API pada aplikasi MVC Mahasiswa agar data dapat diakses menggunakan format JSON.
+
+---
+
+# Penjelasan REST API
+
+REST API digunakan untuk menghubungkan aplikasi dengan sistem lain melalui endpoint tertentu.
+
+Pada project ini, API digunakan untuk:
+- menampilkan data mahasiswa
+- menambah data mahasiswa
+- mengubah data mahasiswa
+- menghapus data mahasiswa
+
+Semua data dikirim menggunakan format:
+
+```json
+JSON
+```
+
+---
+
+# Endpoint API
+
+## GET Data Mahasiswa
+
+```bash
+/api/mahasiswa
+```
+
+Digunakan untuk menampilkan seluruh data mahasiswa.
+
+---
+
+## GET Detail Mahasiswa
+
+```bash
+/api/mahasiswa/{id}
+```
+
+Digunakan untuk menampilkan detail mahasiswa berdasarkan id.
+
+---
+
+## POST Tambah Data
+
+```bash
+/api/mahasiswa/store
+```
+
+Digunakan untuk menambahkan data mahasiswa baru.
+
+---
+
+## PUT Update Data
+
+```bash
+/api/mahasiswa/update/{id}
+```
+
+Digunakan untuk memperbarui data mahasiswa.
+
+---
+
+## DELETE Hapus Data
+
+```bash
+/api/mahasiswa/delete/{id}
+```
+
+Digunakan untuk menghapus data mahasiswa.
+
+---
+
+# Langkah Pengerjaan
+
+### 1. Membuat ApiController
+Membuat file:
+
+```bash
+app/controllers/ApiController.php
+```
+
+Controller digunakan untuk menangani request API dan mengembalikan response JSON.
+
+---
+
+### 2. Membuat Response JSON
+Menggunakan:
+
+```php
+json_encode()
+```
+
+untuk mengubah data menjadi format JSON.
+
+---
+
+### 3. Menambahkan Routing API
+Menambahkan route API pada file routing aplikasi.
+
+---
+
+### 4. Menghubungkan dengan Database
+API dihubungkan dengan model mahasiswa untuk mengambil data dari database.
+
+---
+
+# Hasil Tugas Akhir
+
+- API berhasil menampilkan data mahasiswa
+- API berhasil tambah data
+- API berhasil update data
+- API berhasil hapus data
+- Response JSON berhasil tampil
+- API dapat diuji menggunakan browser atau Postman
+
+---
+
+# Screenshot
+
+## REST API Mahasiswa
+
+![API](docs/opsi2_api.jpeg)
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Tugas akhir - opsi 2 - API"
+git push origin main
+```
