@@ -125,7 +125,7 @@ Kolom tabel:
 
 ## Tabel Data Mahasiswa
 
-![Mahasiswa](docs/sesi3_model dan tampil data.jpeg)
+![Mahasiswa](docs/sesi3_model_dan_tampil_data.jpeg)
 
 ---
 
@@ -429,7 +429,7 @@ pada halaman data mahasiswa.
 
 ## Form Tambah Mahasiswa
 
-![Create](docs/sesi4_tambah data mahasiswa.jpeg)
+![Create](docs/sesi4_tambah_data_mahasiswa.jpeg)
 
 ---
 
