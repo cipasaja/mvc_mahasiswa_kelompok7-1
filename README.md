@@ -448,3 +448,116 @@ git add .
 git commit -m "Sesi 4 - create mahasiswa"
 git push origin main
 ```
+
+
+# SESI 5 - EDIT DAN HAPUS DATA (UPDATE & DELETE)
+
+## Tujuan
+Menyelesaikan fitur CRUD dengan menambahkan edit dan hapus data mahasiswa.
+
+---
+
+## Langkah Pengerjaan
+
+### 1. Membuat Method edit()
+Menambahkan method:
+
+```php
+edit($id)
+```
+
+pada file:
+
+```bash
+app/controllers/MahasiswaController.php
+```
+
+Method ini digunakan untuk mengambil data mahasiswa berdasarkan id dan menampilkan form edit.
+
+---
+
+### 2. Membuat Method update()
+Menambahkan method:
+
+```php
+update($id)
+```
+
+Method ini digunakan untuk:
+- menerima data dari form edit
+- validasi data
+- memperbarui data mahasiswa di database
+
+---
+
+### 3. Membuat Method delete()
+Menambahkan method:
+
+```php
+delete($id)
+```
+
+Method ini digunakan untuk menghapus data mahasiswa dari database.
+
+---
+
+### 4. Menambahkan Method pada Model
+Menambahkan method:
+- `find($id)`
+- `update($id, $data)`
+- `delete($id)`
+
+pada file:
+
+```bash
+app/models/Mahasiswa.php
+```
+
+Method digunakan untuk mengambil, memperbarui, dan menghapus data mahasiswa menggunakan PDO.
+
+---
+
+### 5. Membuat View Edit
+Membuat file:
+
+```bash
+app/views/mahasiswa/edit.php
+```
+
+Form edit berisi data lama yang dapat diperbarui.
+
+---
+
+### 6. Menambahkan Tombol Aksi
+Menambahkan tombol:
+- Edit
+- Hapus
+
+pada tabel data mahasiswa.
+
+---
+
+# Hasil Sesi 5
+
+- Edit data mahasiswa berhasil berjalan
+- Hapus data mahasiswa berhasil berjalan
+- Data berhasil diperbarui
+- Data berhasil dihapus dari database
+
+---
+
+# Screenshot
+
+## Update Data Mahasiswa
+
+![Update](docs/sesi5_update.jpeg)
+
+---
+
+# Commit GitHub
+
+```bash
+git add .
+git commit -m "Sesi 5 - update dan delete mahasiswa"
+git push origin main
+```
