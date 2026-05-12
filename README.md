@@ -8,7 +8,7 @@
   Bertanggung jawab atas logika server, database, model, controller, routing, tampilan antarmuka, layout, CSS, Bootstrap, serta memastikan sistem berjalan dengan baik di browser.
 
 - Assyifa Nur Aulia (2310010409) sebagai **Documentation & Debugging Officer (DDO)**  
-  Bertanggung jawab dalam dokumentasi proyek, pengelolaan repository GitHub, debugging error, serta memastikan seluruh anggota memahami alur program dan fitur sistem.
+  Bertanggung jawab dalam dokumentasi proyek, pengelolaan repository GitHub, debugging error.
 
 
 
